@@ -1,4 +1,6 @@
 ﻿using APICatalogo.Context;
+using APICatalogo.DTOS;
+using APICatalogo.DTOS.Mappings;
 using APICatalogo.Filters;
 using APICatalogo.Models;
 using APICatalogo.Repositories;
@@ -51,15 +53,21 @@ namespace APICatalogo.Controllers
 
         [HttpGet]
         //[ServiceFilter(typeof(ApiLoggingFilter))]
-        public ActionResult<IEnumerable<Category>> Get()
+        public ActionResult<IEnumerable<CategoryDTO>> Get()
         {
             var categories = _uof.CategoryRepository.GetAll();
-            return Ok(categories);
+
+            if (categories == null) return NotFound("Don't exist categories");
+
+
+            var categoriesDTO = categories.ToCategoryDTOList();
+
+            return Ok(categoriesDTO);
         }
 
 
         [HttpGet("{id:int}", Name = "GetCategory")]
-        public ActionResult<Category> Get(int id)
+        public ActionResult<CategoryDTO> Get(int id)
         {
             //MIDDLEWARES
             //throw new Exception("Exceção ao retornar produto pelo id");
@@ -74,7 +82,11 @@ namespace APICatalogo.Controllers
                 _logger.LogWarning($"Category id ={id} not found");
                 return NotFound($"Category id={id} not found...");
             }
-            return Ok(category);          
+
+
+            var categoryDTO = category.ToCategoryDTO();
+
+            return Ok(categoryDTO);
         }
 
         //[HttpGet("products")]
@@ -94,36 +106,44 @@ namespace APICatalogo.Controllers
         //}
 
         [HttpPost]
-        public ActionResult Post(Category category)
+        public ActionResult<CategoryDTO> Post(CategoryDTO categoryDTO)
         {
-            if (category is null) 
+            if (categoryDTO is null) 
             {
                 _logger.LogWarning($"Invalid...");
                 return BadRequest("Invalid...");
             }
+            var category = categoryDTO.ToCategory();
 
             var categoryCreated = _uof.CategoryRepository.Add(category);
             _uof.Commit();
 
-            return new CreatedAtRouteResult("GetCategory", new { id = categoryCreated.Id }, categoryCreated);
+            var newCategoryDTO = categoryCreated.ToCategoryDTO();
+
+            return new CreatedAtRouteResult("GetCategory", new { id = newCategoryDTO.Id }, newCategoryDTO);
         }
 
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id,Category category)
+        public ActionResult<CategoryDTO> Put(int id,CategoryDTO categoryDTO)
         {
-            if (id != category.Id)
+            if (id != categoryDTO.Id)
             {
                 _logger.LogWarning($"Invalid...");
                 return BadRequest();
             }
 
+            var category = categoryDTO.ToCategory();
+
             var categoryModified = _uof.CategoryRepository.Update(category);
             _uof.Commit();
-            return Ok(categoryModified);
+
+            var newCategoryModified = categoryModified.ToCategoryDTO();
+
+            return Ok(newCategoryModified);
         }
 
         [HttpDelete("{id:int}")]
-        public ActionResult Delete(int id)
+        public ActionResult<CategoryDTO> Delete(int id)
         {
 
             var category = _uof.CategoryRepository.GetById(c => c.Id == id);
@@ -136,7 +156,10 @@ namespace APICatalogo.Controllers
 
             var categoryDeleted = _uof.CategoryRepository.Delete(category);
             _uof.Commit();
-            return Ok(categoryDeleted);
+
+            var categoryDeletedDTO = categoryDeleted.ToCategoryDTO();
+
+            return Ok(categoryDeletedDTO);
         }
     }
 }
