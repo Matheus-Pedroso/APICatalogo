@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\dtos\\mappings\\categorymapextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\dtos\\mappings\\categorymapextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\dtos\\mappings\\productdtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\dtos\\mappings\\productdtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryMapExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\DTOS\\Mappings\\CategoryMapExtensions.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\DTOS\\Mappings\\CategoryMapExtensions.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\DTOS\\Mappings\\CategoryMapExtensions.cs",
-              "RelativeToolTip": "APICatalogo\\DTOS\\Mappings\\CategoryMapExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Program.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Program.cs",
+              "RelativeToolTip": "APICatalogo\\Program.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAADMAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T21:33:39.566Z",
+              "WhenOpened": "2024-05-17T02:45:52.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAIwJMAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "ProductDTOMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\DTOS\\Mappings\\ProductDTOMappingProfile.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\DTOS\\Mappings\\ProductDTOMappingProfile.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\DTOS\\Mappings\\ProductDTOMappingProfile.cs",
+              "RelativeToolTip": "APICatalogo\\DTOS\\Mappings\\ProductDTOMappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T21:05:51.732Z",
+              "WhenOpened": "2024-05-17T02:43:12.818Z",
               "EditorCaption": ""
             }
           ]

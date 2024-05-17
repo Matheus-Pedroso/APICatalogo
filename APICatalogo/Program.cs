@@ -1,4 +1,5 @@
 using APICatalogo.Context;
+using APICatalogo.DTOS.Mappings;
 using APICatalogo.Extension;
 using APICatalogo.Filters;
 using APICatalogo.Logging;
@@ -59,7 +60,7 @@ builder.Logging.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderCon
 }));
 
 
-
+builder.Services.AddAutoMapper(typeof(ProductDTOMappingProfile));
 
 var app = builder.Build();
 

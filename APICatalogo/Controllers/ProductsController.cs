@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using APICatalogo.Repositories;
+using APICatalogo.DTOS;
 
 namespace APICatalogo.Controllers
 {
@@ -36,7 +37,7 @@ namespace APICatalogo.Controllers
         //}
 
         [HttpGet]
-        public ActionResult<IEnumerable<Product>> Get()
+        public ActionResult<IEnumerable<ProductDTO>> Get()
         {
             var products = _uof.ProductRepository.GetAll();
             if (products is null) return NotFound();
@@ -53,7 +54,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpGet("products/{id}")]
-        public ActionResult<IEnumerable<Product>> GetProductsPerCategory(int idCategory)
+        public ActionResult<IEnumerable<ProductDTO>> GetProductsPerCategory(int idCategory)
         {
             var products = _uof.ProductRepository.GetProductsPerCategory(idCategory);
             if (products is null) return NotFound();
@@ -71,9 +72,9 @@ namespace APICatalogo.Controllers
         //}
 
         [HttpPost]
-        public ActionResult Post(Product product)
+        public ActionResult<ProductDTO> Post(ProductDTO productDTO)
         {
-            if (product is null) return BadRequest();
+            if (productDTO is null) return BadRequest();
 
             var newProduct = _uof.ProductRepository.Add(product);
             _uof.Commit();
@@ -84,9 +85,9 @@ namespace APICatalogo.Controllers
 
         [HttpPut("{id:int}")] // Put precisa ser uma atualização completa, ou seja, preciso informar todos os campos do json pra realizar a modificação
 
-        public ActionResult Put(int id, Product product)
+        public ActionResult<ProductDTO> Put(int id, Product productDTO)
         {
-            if (id != product.Id) return BadRequest();
+            if (id != productDTO.Id) return BadRequest();
 
             var productModified = _uof.ProductRepository.Update(product);
             _uof.Commit();
@@ -96,7 +97,7 @@ namespace APICatalogo.Controllers
 
         [HttpDelete("{id:int}")]
 
-        public ActionResult Delete(int id)
+        public ActionResult<ProductDTO> Delete(int id)
         {
             var product = _uof.ProductRepository.GetById(p => p.Id == id);
 
