@@ -7,6 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using APICatalogo.Repositories;
 using APICatalogo.DTOS;
+using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
+using APICatalogo.Pagination;
 
 namespace APICatalogo.Controllers
 {
@@ -15,12 +18,14 @@ namespace APICatalogo.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IUnitOfWork _uof;
+        private readonly IMapper _mapper;
         // eu poderia comentar a injeção do repositório genérico, uma vez que na injeção do repositório específico <product> já é herdado...
         // todos os métodos criados no repositório genérico
 
-        public ProductsController(IUnitOfWork uof)
+        public ProductsController(IUnitOfWork uof, IMapper mapper)
         {
             _uof = uof;
+            _mapper = mapper;
         }
 
         // Posso criar várias endpoints distintos que vai chamar apenas um metodo
@@ -40,17 +45,24 @@ namespace APICatalogo.Controllers
         public ActionResult<IEnumerable<ProductDTO>> Get()
         {
             var products = _uof.ProductRepository.GetAll();
-            if (products is null) return NotFound();
-            return Ok(products);
+            
+            if (products == null) return NotFound();
+
+            // var destino = _mapper.map<destino>(origem);
+            var productsDto = _mapper.Map<IEnumerable<ProductDTO>>(products);
+
+            return Ok(productsDto);
         }
 
         [HttpGet("{id:int}", Name = "GetProduct")]
-        public ActionResult<Product> GetId(int id)
+        public ActionResult<ProductDTO> GetId(int id)
         {
-            var produto = _uof.ProductRepository.GetById(p => p.Id == id);
-            if (produto is null) return NotFound("Product not found...");
+            var product = _uof.ProductRepository.GetById(p => p.Id == id);
+            if (product is null) return NotFound("Product not found...");
 
-            return produto;
+            var productDto = _mapper.Map<ProductDTO>(product);
+
+            return productDto;
         }
 
         [HttpGet("products/{id}")]
@@ -59,8 +71,23 @@ namespace APICatalogo.Controllers
             var products = _uof.ProductRepository.GetProductsPerCategory(idCategory);
             if (products is null) return NotFound();
 
-            return Ok(products);
+            var productsDto = _mapper.Map<IEnumerable<ProductDTO>>(products);
+
+            return Ok(productsDto);
         }
+
+
+        [HttpGet("pagination")]
+
+        public ActionResult<IEnumerable<ProductDTO>> GetProducts([FromQuery] ProductsParameters productsParameters)
+        {
+            var products = _uof.ProductRepository.GetProducts(productsParameters);
+
+            var productsDTO = _mapper.Map<IEnumerable<ProductDTO>>(products);
+
+            return Ok(productsDTO);
+        }
+
 
         //[HttpGet("{id:int}", Name = "GetProduct")]
         //public async Task<ActionResult<Product>> Get([FromQuery]int id)
@@ -76,12 +103,52 @@ namespace APICatalogo.Controllers
         {
             if (productDTO is null) return BadRequest();
 
+            var product = _mapper.Map<Product>(productDTO);
+
             var newProduct = _uof.ProductRepository.Add(product);
             _uof.Commit();
 
-            return new CreatedAtRouteResult("GetProduct", new { id = newProduct.Id }, newProduct);
+            var newProductDTO = _mapper.Map<ProductDTO>(newProduct);
+
+            return new CreatedAtRouteResult("GetProduct", new { id = newProductDTO.Id }, newProductDTO);
 
         }
+
+
+        [HttpPatch("{id}/UpdatePartial")]
+        public ActionResult<ProductDTOUpdateResponse> Patch(int id,
+            JsonPatchDocument<ProductDTOUpdateRequest> patchProductDTO)
+        {
+            if (patchProductDTO is null || id <= 0)
+            {
+                return BadRequest();
+            }
+
+            var product = _uof.ProductRepository.GetById(c => c.Id == id);
+
+            if (product is null)
+            {
+                return NotFound();
+            }
+
+            var productUpdateReq = _mapper.Map<ProductDTOUpdateRequest>(product);
+
+            patchProductDTO.ApplyTo(productUpdateReq, ModelState);
+
+
+            if (!ModelState.IsValid || !TryValidateModel(productUpdateReq)) return BadRequest(ModelState);
+
+            _mapper.Map(productUpdateReq, product);
+
+            _uof.ProductRepository.Update(product);
+            _uof.Commit();
+
+            return Ok(_mapper.Map<ProductDTOUpdateResponse>(product));
+        }
+
+
+
+
 
         [HttpPut("{id:int}")] // Put precisa ser uma atualização completa, ou seja, preciso informar todos os campos do json pra realizar a modificação
 
@@ -89,10 +156,14 @@ namespace APICatalogo.Controllers
         {
             if (id != productDTO.Id) return BadRequest();
 
+            var product = _mapper.Map<Product>(productDTO);
+
             var productModified = _uof.ProductRepository.Update(product);
             _uof.Commit();
 
-            return Ok(productModified);
+            var newProductDto = _mapper.Map<ProductDTO>(productModified);
+
+            return Ok(newProductDto);
         }
 
         [HttpDelete("{id:int}")]
@@ -106,7 +177,9 @@ namespace APICatalogo.Controllers
             var productDeleted = _uof.ProductRepository.Delete(product);
             _uof.Commit();
 
-            return Ok(productDeleted);
+            var productDeletedDto = _mapper.Map<ProductDTO>(productDeleted);
+
+            return Ok(productDeletedDto);
         }
     }
 }
