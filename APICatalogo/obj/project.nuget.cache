@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VPIyGeBcLttDLtrBgCsBsECqeBq8z5czYjM1EamkVBfBS6cYey2O81lva92vJLYWJty5wDAFf4zjYy4/OC/VHw==",
+  "dgSpecHash": "YdJwDFS36J4LmydEiVST989iQxQUQW2Zyz7N9uD/MG0Qvdj+zAyQPpv6/yapLIqPgxfLUtd2bIaJoHo/U88RNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.5\\microsoft.aspnetcore.jsonpatch.8.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.5\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.1\\microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
@@ -147,7 +148,9 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\x.pagedlist\\8.4.7\\x.pagedlist.8.4.7.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\x.pagedlist.mvc.core\\8.4.7\\x.pagedlist.mvc.core.8.4.7.nupkg.sha512"
   ],
   "logs": []
 }
