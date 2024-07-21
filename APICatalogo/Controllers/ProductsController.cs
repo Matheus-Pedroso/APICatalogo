@@ -12,9 +12,12 @@ using Microsoft.AspNetCore.JsonPatch;
 using APICatalogo.Pagination;
 using Newtonsoft.Json;
 using X.PagedList;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace APICatalogo.Controllers
 {
+    [EnableCors("OrigensComAcessosPermitidos")]
     [Route("[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
@@ -30,20 +33,8 @@ namespace APICatalogo.Controllers
             _mapper = mapper;
         }
 
-        // Posso criar várias endpoints distintos que vai chamar apenas um metodo
-        //[HttpGet("/first")]
-        //[HttpGet("teste")]
-        //[HttpGet("/primeito")]
-
-        //[HttpGet("{valor:alpha:length(5)}")]
-        //public ActionResult<Product> GetFirst()
-        //{
-        //    var product = _context.Products.FirstOrDefault();
-        //    if (product == null) return NotFound("There are no products registered");
-        //    return product;
-        //}
-
         [HttpGet]
+        //[Authorize(Policy = "UserOnly")]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> Get()
         {
             var products = await _uof.ProductRepository.GetAllAsync();
@@ -67,6 +58,7 @@ namespace APICatalogo.Controllers
             return productDto;
         }
 
+        [DisableCors]
         [HttpGet("products/{id}")]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductsPerCategory(int idCategory)
         {

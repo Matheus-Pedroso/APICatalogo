@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\ratelimitoptions\\myratelimitoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\ratelimitoptions\\myratelimitoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAYwLgAAAAeAAAA",
+              "DocumentIndex": 2,
+              "Title": "MyRateLimitOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
+              "RelativeToolTip": "APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:37:39.39Z",
+              "WhenOpened": "2024-07-21T23:21:12.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAMwHcAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:35:57.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDMAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:32:49.111Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\appsettings.json",
+              "RelativeDocumentMoniker": "APICatalogo\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\appsettings.json",
+              "RelativeToolTip": "APICatalogo\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-21T23:16:33.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Repositories\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Repositories\\IProductRepository.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\IProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:32:37.966Z",
+              "WhenOpened": "2024-07-21T23:13:17.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Program.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Program.cs",
+              "RelativeToolTip": "APICatalogo\\Program.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T22:57:35.922Z",
               "EditorCaption": ""
             }
           ]

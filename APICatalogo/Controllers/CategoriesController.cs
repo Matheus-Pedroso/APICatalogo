@@ -6,8 +6,10 @@ using APICatalogo.Models;
 using APICatalogo.Pagination;
 using APICatalogo.Repositories;
 using APICatalogo.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -17,6 +19,7 @@ namespace APICatalogo.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [EnableRateLimiting("fixedwindow")]
     public class CategoriesController : ControllerBase
     {
         private readonly IUnitOfWork _uof;
@@ -28,34 +31,9 @@ namespace APICatalogo.Controllers
             _uof = uof;
         }
 
-        //[HttpGet("ReadingFileConfiguration")]
-
-        ////Ao invés de criar uma requisição eu posso criar uma variável na classe program, recebendo o builder.configuration[chave]
-        //public string GetConfiguration()
-        //{
-        //    var valor1 = _configuration["chave1"];
-        //    var valor2 = _configuration ["chave2"];
-        //    var secao1 = _configuration ["secao1:chave2"];
-
-        //    return $"Chave1 = {valor1}\n Chave2 = {valor2}\n secao1 => valor2 = {secao1}";
-        //}
-
-        //[HttpGet("UsandoFromServices/{name}")]
-
-        //public ActionResult<string> GetMyServices([FromServices] IMyServices myServices, string name)
-        //{
-        //    return myServices.Salutation(name);
-        //}
-
-        //[HttpGet("SemFromServices/{name}")]
-
-        //public ActionResult<string> GetMySemServices(IMyServices myServices, string name)
-        //{
-        //    return myServices.Salutation(name);
-        //}
-
         [HttpGet]
-        //[ServiceFilter(typeof(ApiLoggingFilter))]
+        //[Authorize]
+        [DisableRateLimiting]
         public async Task<ActionResult<IEnumerable<CategoryDTO>>> Get()
         {
             var categories = await _uof.CategoryRepository.GetAllAsync();
@@ -183,6 +161,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(Policy = "AdminOnly")]
         public async Task<ActionResult<CategoryDTO>> Delete(int id)
         {
 
