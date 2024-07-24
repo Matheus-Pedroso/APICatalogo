@@ -20,6 +20,7 @@ namespace APICatalogo.Controllers
     [EnableCors("OrigensComAcessosPermitidos")]
     [Route("[controller]")]
     [ApiController]
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class ProductsController : ControllerBase
     {
         private readonly IUnitOfWork _uof;

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\controllers\\testev2controler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\testev2controler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\controllers\\testev1controler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\testev1controler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\controllers\\testev3controler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\testev3controler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\ratelimitoptions\\myratelimitoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\ratelimitoptions\\myratelimitoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|c:\\users\\administrator\\documents\\curso asp.net\\apicatalogo\\apicatalogo\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1BF4D56-57F9-4096-94AE-EB57002AAB2D}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,53 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MyRateLimitOptions.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
-              "RelativeToolTip": "APICatalogo\\RateLimitOptions\\MyRateLimitOptions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "Title": "TesteV3Controler.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\TesteV3Controler.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\TesteV3Controler.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\TesteV3Controler.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\TesteV3Controler.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T23:21:12.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\appsettings.json",
-              "RelativeDocumentMoniker": "APICatalogo\\appsettings.json",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\appsettings.json",
-              "RelativeToolTip": "APICatalogo\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-21T23:16:33.531Z",
+              "WhenOpened": "2024-07-24T09:29:34.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T23:13:17.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Program.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
               "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Program.cs",
               "RelativeToolTip": "APICatalogo\\Program.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIQAAAAsAAAA",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAMgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T22:57:35.922Z",
+              "WhenOpened": "2024-07-23T23:07:44.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TesteV2Controler.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\TesteV2Controler.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\TesteV2Controler.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\TesteV2Controler.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\TesteV2Controler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T23:05:24.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TesteV1Controler.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\TesteV1Controler.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\TesteV1Controler.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\Controllers\\TesteV1Controler.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\TesteV1Controler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T23:04:11.791Z",
               "EditorCaption": ""
             }
           ]

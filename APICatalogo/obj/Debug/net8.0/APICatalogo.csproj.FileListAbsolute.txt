@@ -252,3 +252,7 @@ C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\obj\Debug
 C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.pdb
 C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.genruntimeconfig.cache
 C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\obj\Debug\net8.0\ref\APICatalogo.dll
+C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\Users\Administrator\Documents\Curso ASP.NET\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll

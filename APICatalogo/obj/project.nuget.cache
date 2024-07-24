@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ij/zeRt/zqQXRjYP9DH4fr3GvJbecbf3REI1PBFVrb9YvWYJCPRQJn+skKkWtnv5V5w0zipAdz0FRj5Rwtob+A==",
+  "dgSpecHash": "hljYwySIem3OVd/NPvgG6Nb1UxuB1ja/EWXy3gt/pc9CwjpxHVBzgF3JpM8aCUZa7cHH0lqnaOKkjFVFqHmCyg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Documents\\Curso ASP.NET\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\asp.versioning.mvc\\8.1.0\\asp.versioning.mvc.8.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\asp.versioning.mvc.apiexplorer\\8.1.0\\asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

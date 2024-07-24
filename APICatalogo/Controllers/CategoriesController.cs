@@ -20,6 +20,7 @@ namespace APICatalogo.Controllers
     [Route("[controller]")]
     [ApiController]
     [EnableRateLimiting("fixedwindow")]
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class CategoriesController : ControllerBase
     {
         private readonly IUnitOfWork _uof;
